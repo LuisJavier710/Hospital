@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="login.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Agregamos algunos estilos CSS personalizados */
+      .caja-login {
+        margin-top: 50px;
+      }
+
+      .formulario-login {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .formulario-login-cabecera-fuente span {
+        color: #28a745;
+      }
+
+      .formulario-login-cabecera {
+        margin-bottom: 20px;
+      }
+
+      .login-elements {
+        margin-bottom: 15px;
+      }
+    </style>
+    <title>Registro de usuarios</title>
+  </head>
+  <body>
+    <!-- Formulario de registro -->
+    <div class="container">
+      <div class="text-center caja-login">
+        <p class="formulario-login-cabecera-fuente">Hos<span>pital</span></p>
+        <div class="formulario-login">
+          <form action="registro.php" method="POST">
+            <div class="formulario-login-cabecera">
+              <p class="formulario-login-cabecera-fuente">
+                Registro de usuario
+              </p>
+            </div>
+            <div class="login-elements">
+              <input
+                type="text"
+                name="user"
+                class="form-control"
+                placeholder="Usuario"
+                required
+              />
+            </div>
+            <div class="login-elements">
+              <input
+                type="password"
+                name="pass"
+                class="form-control"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <div class="login-elements">
+              <input
+                type="submit"
+                name="registrarse"
+                class="btn btn-primary btn-block"
+              />
+            </div>
+          </form>
+          <p class="mb-0">
+            ¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
