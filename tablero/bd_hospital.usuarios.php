@@ -20,7 +20,7 @@ pg_query($conexion, $queryDesactivarTriggers);
 
 // Función para generar registros de usuarios en lotes
 function generarRegistrosUsuarios($conexion, $batchSize=2) {
-    for ($i = 1; $i <= 2; $i += $batchSize) {
+    for ($i = 1; $i <= 20000; $i += $batchSize) {
         $registros = [];
         for ($j = 0; $j < $batchSize; $j++) {
             $registros[] = [
