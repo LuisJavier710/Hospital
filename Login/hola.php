@@ -1,4 +1,4 @@
 <?php
 
-echo "Hola gttr";
+echo "Hola";
 ?>
